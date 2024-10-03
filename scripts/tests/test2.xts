@@ -1,0 +1,20 @@
+// import isEmpty from '../../node_modules/lodash-es/isEmpty.js';
+// import { default as cloneDeep } from '../../node_modules/lodash-es/cloneDeep.js';
+// import { default as add } from '@node/lodash-es/cloneDeep.js';
+// import { default as add } from 'lodash-es/cloneDeep.js';
+// import { default as pkg } from 'crypto-js/aes';
+// import { default as cloneDeep } from '../../dist/lodash-es/cloneDeep.js';
+// import { default as add } from '../../dist/lodash/add.js';
+
+import { zxcvbn } from '@zxcvbn-ts/core';
+/**
+ * yao run scripts.tests.test2.test
+ */
+function test() {
+  console.log(zxcvbn('12#133%&*3').score);
+  // console.log(cloneDeep({ a: 1 }));
+  //   console.log('AES', pkg.encrypt('my message', 'secry key 123').toString());
+  //   const ciphertext = AES.encrypt('my message', 'secry key 123').toString();
+  //   console.log('ciphertext' + ciphertext);
+}
+test();
