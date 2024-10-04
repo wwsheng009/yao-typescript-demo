@@ -8,7 +8,7 @@ import { sum } from 'es-toolkit';
 
 import { default as cytoscape } from 'cytoscape';
 /**
- * yao run scripts.tests.lodash.test
+ * yao run scripts.tests.others.test
  */
 function test() {
   console.log(countBy([6.1, 4.2, 6.3], Math.floor));

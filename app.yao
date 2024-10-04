@@ -4,7 +4,7 @@
   "description": "::Another yao application",
   "version": "0.10.4",
   "adminRoot": "admin",
-  "setup": "scripts.setup.Data",
+  "setup": "",
   "menu": {
     "process": "flows.app.menu"
   },

@@ -5,7 +5,7 @@ import { Series, DataFrame } from 'pandas-js';
 // https://stratodem.github.io/pandas.js-docs/#introduction
 
 
-// yao run scripts.tests.pandas.main1
+// yao run scripts.tests.pandas.main
 function main1() {
   const ds = new Series([1, 2, 3, 4], {
     name: '我的测试名称',

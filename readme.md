@@ -18,3 +18,31 @@
 安装npm开发包，执行命令`npm i`，请不要使用pnpm。
 
 有一些yao应用使用npm兼容性的测试与说明，请查看文档：https://github.com/wwsheng009/yao-docs/blob/main/docs/YaoDSL/v8go/%E4%BD%BF%E7%94%A8npm%E5%BA%93.md
+
+## 使用Docker测试
+
+```sh
+# 构建docker
+docker build --build-arg ARCH=amd64 --build-arg VERSION=0.10.5 --tag yao-ts-demo .
+# docker run -d --restart unless-stopped --name yao-ts-demo -p 5099:5099 yao-ts-demo
+
+# 进入docker
+docker run -it --rm -p 5099:5099 yao-ts-demo sh
+
+#配置数据库
+yao start
+
+# ctrl-c 退出web服务
+
+# 测试
+yao run scripts.tests.lodash.main
+
+yao run scripts.tests.crossfilter.main
+
+yao run scripts.tests.underscore.main
+
+yao run scripts.tests.math.test
+
+yao run scripts.tests.others.test
+
+```
