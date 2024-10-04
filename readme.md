@@ -22,6 +22,11 @@
 ## 使用Docker测试
 
 ```sh
+
+git clone https://github.com/wwsheng009/yao-typescript-demo
+
+cd yao-typescript-demo
+
 # 构建docker
 docker build --build-arg ARCH=amd64 --build-arg VERSION=0.10.5 --tag yao-ts-demo .
 # docker run -d --restart unless-stopped --name yao-ts-demo -p 5099:5099 yao-ts-demo
