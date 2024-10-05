@@ -3,7 +3,7 @@
  * @type {import('prettier').Config}
  * @see https://www.prettier.cn/docs/options.html
  */
-module.exports = {
+export default {
   // 一行最多 80 字符
   printWidth: 80,
   // 使用 4 个空格缩进

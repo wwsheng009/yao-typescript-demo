@@ -11,6 +11,11 @@ WORKDIR /data/app
 
 COPY . .
 
+RUN rm -rf /data/app/.git && \
+    chown -R yao:yao /data/app && \
+    chmod +x /data/app/init.sh && \
+    mkdir -p /data/app/db
+
 # RUN curl -fsSL "https://github.com/wwsheng009/yao-plugin-command/releases/download/command-linux-plugin/command-linux-${ARCH}.so" -o /data/app/plugins/command.so && \
 #     chmod +x /data/app/plugins/command.so
 
